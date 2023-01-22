@@ -1,4 +1,5 @@
-@import url("normalize.css"); /* bring in normalize.css styles */ 
+@import url("normalize.css");
+/* bring in normalize.css styles */
 
 :root {
     --coral: #F05D5E;
@@ -6,10 +7,42 @@
     --light: #E7ECEF;
     --dark: #272932;
     --camel: #D8A47F;
+
 }
 
+@media only screen and (max-width: 699px) {
+    :root {
+        --font-scale: 1;
+        /* --body-background_colour: var(--coral); */
+
+    }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 700px) {
+    :root {
+        --font-scale: 1.2;
+        /* --body-background_colour: var(--teal); */
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    :root {
+        --font-scale: 1.6;
+        /* --body-background_colour: var(--light); */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-ipsum {
+        display: none;
+        /* --body-background_colour: var(--camel); */
+    }
+}
+
+
 body {
-    background-color: var(--light);
+    background-color: var(--body-background_colour);
 }
 
 .card {
@@ -27,9 +60,10 @@ img {
 }
 
 h1 {
-    font-size: 2.25rem;
+    font-size: calc(2.25rem * var(--font-scale));
 }
 
-p {
-    font-size: 0.75rem;
+.header-ipsum {
+
+    font-size: calc(0.75rem * var(--font-scale));
 }
