@@ -1,3 +1,6 @@
+@import-normalize; /* bring in normalize.css styles */
+
+
 :root {
     --coral: #F05D5E;
     --teal: #0F7173;
