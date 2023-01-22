@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+@import url("normalize.css"); /* bring in normalize.css styles */ 
 
 :root {
     --coral: #F05D5E;
@@ -13,15 +13,23 @@ body {
 }
 
 .card {
-    padding: 10px;
-    margin: 10px;
+    padding: 0.625rem;
+    margin: 0.625rem;
 }
 
 img {
-    width: 250px;
+    width: 10rem;
 }
 
 .card-container {
-    display:flex;
+    display: flex;
     flex-flow: row wrap;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+p {
+    font-size: 0.75rem;
 }
