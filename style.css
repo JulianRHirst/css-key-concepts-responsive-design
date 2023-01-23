@@ -5,7 +5,7 @@
 @font-face {
     font-family: 'oriental_catslight';
     src: url('./fonts/orientalcatslight-2ozb8-webfont.woff2') format('woff2'),
-         url('./fonts/orientalcatslight-2ozb8-webfont.woff') format('woff');
+        url('./fonts/orientalcatslight-2ozb8-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,20 +23,23 @@
 
 
 @media (prefers-color-scheme: dark) {
-    /* styles for dark mode */
-    body {
-      background-color: black;
-      color: white;
+    :root {
+        /* styles for dark mode */
+            --body-background_color: black;
+            --body-font_color: white;
+            --card-background_color: darkslategray;
+
     }
-  }
-  
-  @media (prefers-color-scheme: light) {
-    /* styles for light mode */
-    body {
-      background-color: white;
-      color: black;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /* styles for light mode */
+            --body-background_color: white;
+            --body-font_color: black;
+            --card-background_color: lightgrey;
     }
-  }
+}
 
 @media only screen and (max-width: 699px) {
     :root {
@@ -71,11 +74,14 @@
 
 body {
     font-family: "Amiko";
+    background-color: var(--body-background_color);
+    color: var(--body-font_color);
 }
 
 .card {
     padding: 0.625rem;
     margin: 0.625rem;
+
 }
 
 img {
@@ -94,6 +100,10 @@ h1 {
 
 .cat-name {
     font-family: var(--font-cat);
+}
+
+.card {
+    background-color: var(--card-background_color);
 }
 
 .header-ipsum {
