@@ -62,7 +62,7 @@
         --font-scale: 1.6;
         /* --body-background_colour: var(--light); */
     }
-}
+}https://www.youtube.com/watch?v=80UWsHtRvsI
 
 @media only screen and (max-width: 600px) {
     .header-ipsum {
@@ -81,7 +81,6 @@ body {
 .card {
     padding: 0.625rem;
     margin: 0.625rem;
-
 }
 
 img {
@@ -109,4 +108,26 @@ h1 {
 .header-ipsum {
 
     font-size: calc(0.75rem * var(--font-scale));
+}
+
+.catnav {
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.catnav-item {
+    border-width:0;
+    list-style: none;
+}
+
+.catnav-video iframe {
+    width:800px;
+    height: 500px;
+}
+
+.nav-main {
+    display: flex;
+    gap: 10px;
+    flex-flow: wrap row;
+    align-items: start;
 }

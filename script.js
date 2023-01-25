@@ -60,7 +60,7 @@ const cats= [
         "species" : "Bird?",
         "favFoods" : ["your soul"],
         "birthYear" : 2020,
-        "photo" : "https://www.top13.net/wp-content/uploads/2015/10/perfectly-timed-cat-photos-funny-cover.jpg"
+        "photo" : "https://metro.co.uk/wp-content/uploads/2022/01/PRC_220664379.jpg?quality=90&strip=all&zoom=1&resize=644%2C338"
     },
     {
         "name" : "El Taco",
@@ -81,7 +81,7 @@ const cats= [
         "species" : "Tiny Cat",
         "favFoods" : ["milk"],
         "birthYear" : 2021,
-        "photo" : "https://i.ytimg.com/vi/ZKBlMWI6nO4/maxresdefault.jpg"
+        "photo" : "https://i.imgur.com/VoSfyvA.jpeg"
     },
     {
         "name" : "Tiger",
@@ -128,7 +128,7 @@ const cats= [
         birthYear[i].innerText = `Birth Year: ${cats[i].birthYear}`
         species[i].innerText = `Species: ${cats[i].species}`
     }
-})();
+})()
 
 
 
